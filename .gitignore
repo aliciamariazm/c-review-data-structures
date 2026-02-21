@@ -36,6 +36,9 @@
 *.x86_64
 *.hex
 
+#Extensions
+*.pdf
+
 # Debug files
 *.dSYM/
 *.su
