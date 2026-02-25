@@ -23,3 +23,10 @@ void executar_ex_2(Usuario *usuario_atual){
 
     printf("\n| Dados inseridos:\n| %s\n| %d\n| %.2f\n", usuario_atual->nome, usuario_atual->idade, usuario_atual->altura);
 }
+
+void executar_ex_3(){
+    float imprimir_numero = 75.7632489;
+    printf("| Com uma casa decimal: %.1f\n", imprimir_numero);
+    printf("| Com duas casas decimais: %.2f\n", imprimir_numero);
+    printf("| Com uma casa decimal: %.5f", imprimir_numero);
+}

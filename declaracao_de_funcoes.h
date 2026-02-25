@@ -10,5 +10,6 @@ typedef struct{
 
 void executar_ex_1(Usuario *usuario_atual);
 void executar_ex_2(Usuario *usuario_atual);
+void executar_ex_3();
 
 #endif

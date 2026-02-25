@@ -33,6 +33,14 @@ int main(){
             executar_ex_2(&usuario_atual);
             printf("\n> Seu código foi executado com sucesso.");
             break;
+        
+        case 3:
+            system("cls");
+            printf("============= EX 3 | PRIMEIRA LISTA ==============\n");
+            executar_ex_3();
+            printf("\n\n> Seu código foi executado com sucesso.");
+            break;
+
         default:
             break;
     }
