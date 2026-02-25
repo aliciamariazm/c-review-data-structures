@@ -30,3 +30,26 @@ void executar_ex_3(){
     printf("| Com duas casas decimais: %.2f\n", imprimir_numero);
     printf("| Com uma casa decimal: %.5f", imprimir_numero);
 }
+
+void executar_ex_4(Usuario *usuario_atual){
+    printf("-> Digite a sua altura: ");
+    scanf("%f", &usuario_atual->altura);
+    printf("\n| A sua altura é %.2f", usuario_atual->altura);
+}
+
+void executar_ex_5(Usuario *usuario_atual){
+    Usuario pessoa_1;
+    Usuario pessoa_2;
+
+    printf("-> Digite o seu peso: ");
+    scanf("%f", &usuario_atual->peso);
+    
+    printf("-> Digite o peso de uma pessoa qualquer: ");
+    scanf("%f", &pessoa_1.peso);
+
+    printf("-> Digite o peso de outra pessoa: ");
+    scanf("%f", &pessoa_2.peso);
+
+    printf("\n| Seu peso: %.2f\n| Peso da Pessoa 1: %.2f\n| Peso da Pessoa 2: %.2f", usuario_atual->peso, pessoa_1.peso, pessoa_2.peso);
+    
+}
