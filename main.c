@@ -54,7 +54,19 @@ int main(){
             executar_ex_5(&usuario_atual);
             printf("\n\n> Seu código foi executado com sucesso.");
             break;
-
+        
+        case 6:
+            system("cls");
+            printf("============= EX 6 | PRIMEIRA LISTA ==============\n");
+            executar_ex_6();
+            printf("\n\n> Seu código foi executado com sucesso.");
+            break;
+        case 7:
+            system("cls");
+            printf("============= EX 7 | PRIMEIRA LISTA ==============\n");
+            executar_ex_7();
+            printf("\n\n> Seu código foi executado com sucesso.");
+            break;
         default:
             break;
     }

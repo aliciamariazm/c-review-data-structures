@@ -14,5 +14,7 @@ void executar_ex_2(Usuario *usuario_atual);
 void executar_ex_3();
 void executar_ex_4(Usuario *usuario_atual);
 void executar_ex_5(Usuario *usuario_atual);
+void executar_ex_6();
+void executar_ex_7();
 
 #endif
