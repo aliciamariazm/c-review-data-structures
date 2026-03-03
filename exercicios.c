@@ -82,7 +82,8 @@ void executar_ex_8(){
     int escolha_do_exercicio_8;
     printf("--> Escolha o ID do sub-exercício\n> ");
     scanf("%d", &escolha_do_exercicio_8);
-    switch(escolha_do_exercicio_8){
+
+    switch(escolha_do_exercicio_8){ //Lembrar de refatorar o menu
         case 1:
             system("cls");
             printf("============= EX 8->1 | PRIMEIRA LISTA ==============\n");
@@ -101,10 +102,16 @@ void executar_ex_8(){
             system("cls");
             printf("============= EX 8->6 | PRIMEIRA LISTA ==============\n");
             executar_ex_8_6();
-            printf("\n\n> Seu código foi executado com sucesso."); //Lembrar de mexer aqui               
+            printf("\n\n> Seu código foi executado com sucesso.");               
             break;
-        //case 8:
-            }
+        
+        case 7:
+            system("cls");
+            printf("============= EX 8->7 | PRIMEIRA LISTA ==============\n");
+            executar_ex_8_7();
+            printf("\n\n> Seu código foi executado com sucesso.");             
+            break;
+    }
 }
 
 void executar_ex_8_1(){
@@ -148,20 +155,20 @@ void executar_ex_8_6(){
     printf("-> Insira um número inteiro de 4 dígitos: ");
     scanf("%d", &numero_4_digitos);
     printf("\n| RESULTADO:\n");
-    //9874
-    aux = numero_4_digitos/1000; //9
+
+    aux = numero_4_digitos/1000; 
 
     printf("| %d\n", aux);
 
     aux *= 1000;
-    aux = numero_4_digitos - aux; //874
+    aux = numero_4_digitos - aux;
     numero_4_digitos = aux;
     aux = numero_4_digitos/100;
     
     printf("| %d\n", aux);
     
     aux *= 100;
-    aux = numero_4_digitos - aux; //74
+    aux = numero_4_digitos - aux;
     numero_4_digitos = aux;
     aux = numero_4_digitos/10;
     
@@ -172,4 +179,18 @@ void executar_ex_8_6(){
     
     printf("| %d\n", aux);
 
+}
+
+void executar_ex_8_7(){
+    int tempo_em_segundos, tempo_em_minutos, tempo_em_horas;
+
+    printf("-> Insira o tempo em segundos: ");
+    scanf("%d", &tempo_em_segundos);
+
+    tempo_em_minutos = tempo_em_segundos/60;
+    tempo_em_horas = tempo_em_minutos/60;
+
+    printf("\n| TEMPO EM SEG: %d\n", tempo_em_segundos);
+    printf("| TEMPO EM MIN: %d\n", tempo_em_minutos);
+    printf("| TEMPO EM HORAS: %d", tempo_em_horas);
 }
