@@ -96,7 +96,13 @@ void executar_ex_8(){
             executar_ex_8_5();
             printf("\n\n> Seu código foi executado com sucesso.");                
             break;
-        //case 7:
+        
+        case 6:
+            system("cls");
+            printf("============= EX 8->6 | PRIMEIRA LISTA ==============\n");
+            executar_ex_8_6();
+            printf("\n\n> Seu código foi executado com sucesso."); //Lembrar de mexer aqui               
+            break;
         //case 8:
             }
 }
@@ -134,4 +140,36 @@ void executar_ex_8_5(){
     b = aux;
 
     printf("| VERSÃO TROCADA\n| A: %d\n| B: %d\n\n", a, b);
+}
+
+void executar_ex_8_6(){
+    int numero_4_digitos, aux;
+
+    printf("-> Insira um número inteiro de 4 dígitos: ");
+    scanf("%d", &numero_4_digitos);
+    printf("\n| RESULTADO:\n");
+    //9874
+    aux = numero_4_digitos/1000; //9
+
+    printf("| %d\n", aux);
+
+    aux *= 1000;
+    aux = numero_4_digitos - aux; //874
+    numero_4_digitos = aux;
+    aux = numero_4_digitos/100;
+    
+    printf("| %d\n", aux);
+    
+    aux *= 100;
+    aux = numero_4_digitos - aux; //74
+    numero_4_digitos = aux;
+    aux = numero_4_digitos/10;
+    
+    printf("| %d\n", aux);
+    
+    aux *= 10;
+    aux = numero_4_digitos - aux;
+    
+    printf("| %d\n", aux);
+
 }
