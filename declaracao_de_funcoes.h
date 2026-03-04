@@ -21,5 +21,7 @@ void executar_ex_8_1();
 void executar_ex_8_5();
 void executar_ex_8_6();
 void executar_ex_8_7();
+void executar_ex_8_8();
+void executar_ex_9();
 
 #endif

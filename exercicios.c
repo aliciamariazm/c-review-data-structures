@@ -111,6 +111,13 @@ void executar_ex_8(){
             executar_ex_8_7();
             printf("\n\n> Seu código foi executado com sucesso.");             
             break;
+        
+        case 8:
+            system("cls");
+            printf("============= EX 8->8 | PRIMEIRA LISTA ==============\n");
+            executar_ex_8_8();
+            printf("\n\n> Seu código foi executado com sucesso.");             
+            break;
     }
 }
 
@@ -193,4 +200,44 @@ void executar_ex_8_7(){
     printf("\n| TEMPO EM SEG: %d\n", tempo_em_segundos);
     printf("| TEMPO EM MIN: %d\n", tempo_em_minutos);
     printf("| TEMPO EM HORAS: %d", tempo_em_horas);
+}
+
+void executar_ex_8_8(){
+    float investimento_apostadores[3], divisao_do_premio_por_apostador[3], total_da_aposta, proporcao_apostadores[3], premio_da_loteria;
+
+    printf("-> Insira o prêmio da loteria: R$");
+    scanf("%f", &premio_da_loteria);
+
+    for(int i=0; i<3; i++){
+        printf("\n-> Insira o valor que o %dº apostador investiu: R$", i+1);
+        scanf("%f", &investimento_apostadores[i]);
+    }
+
+    total_da_aposta = investimento_apostadores[0] + investimento_apostadores[1] + investimento_apostadores[2];
+    
+    printf("\n\n| RESULTADOS\n");
+    for(int i=0; i<3; i++){
+        proporcao_apostadores[i] = investimento_apostadores[i]/total_da_aposta;
+        divisao_do_premio_por_apostador[i] = proporcao_apostadores[i]*premio_da_loteria;
+        printf("| APOSTADOR %d: R$%.2f\n", i+1, divisao_do_premio_por_apostador[i]);
+    }
+}
+
+void executar_ex_9(){
+    float numero_real_1, numero_real_2, resultado_da_divisao;
+
+    printf("-> Insira o 1º número real: ");
+    scanf("%f", &numero_real_1);
+
+    do{
+        printf("\n-> Insira o 2º número real: ");
+        scanf("%f", &numero_real_2);
+        if(numero_real_2 == 0){
+            printf("\nO denominador não pode ser zero. ");
+        }
+    } while(numero_real_2 == 0);
+
+    resultado_da_divisao = numero_real_1/numero_real_2;
+
+    printf("\n| RESULTADO DA DIVISÃO: %.2f", resultado_da_divisao);
 }

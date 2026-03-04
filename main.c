@@ -73,6 +73,13 @@ int main(){
             executar_ex_8();
             printf("\n\n> Seu código foi executado com sucesso.");
             break;
+        
+        case 9:
+            system("cls");
+            printf("============= EX 9 | PRIMEIRA LISTA ==============\n");
+            executar_ex_9();
+            printf("\n\n> Seu código foi executado com sucesso.");
+            break;
         default:
             break;
     }
