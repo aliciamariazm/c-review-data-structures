@@ -18,6 +18,14 @@ void executar_lista_3(){
                 system("pause");
                 break;
             
+            case 2:
+                system("cls");
+                printf("============= EX 2 | EXERCICIOS VETORES ==============\n");
+                executar_ex_2_L3();
+                printf("\n> Seu código foi executado com sucesso. ");
+                system("pause");
+                break;
+            
             case 0:
                 break;
 
@@ -45,4 +53,31 @@ void executar_ex_1_L3(){
         printf("%d ", aux[i]);
     }
 
+}
+
+void executar_ex_2_L3(){
+    int matriz[5][2], vetor[10], qtd_espacos_no_vetor = 0;
+
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 2; j++){
+            printf("-> Insira o número da matriz [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+            vetor[qtd_espacos_no_vetor] = matriz[i][j];
+            qtd_espacos_no_vetor++;
+        }
+    }
+
+    printf("\n| Vetor preenchido: ");
+    for(int i = 0; i < 10; i++){
+        printf("%d ", vetor[i]);
+    } 
+
+    printf("\n| Estrutura da Matriz:");
+    
+    for(int i = 0; i < 5; i++){
+        printf("\n");
+        for(int j = 0; j < 2; j++){
+            printf("%d ", matriz[i][j]);
+        }
+    }
 }

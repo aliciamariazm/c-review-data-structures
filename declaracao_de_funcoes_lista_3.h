@@ -3,5 +3,6 @@
 
 void executar_lista_3();
 void executar_ex_1_L3();
+void executar_ex_2_L3();
 
 #endif
