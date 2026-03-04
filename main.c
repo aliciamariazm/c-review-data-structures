@@ -80,6 +80,7 @@ int main(){
             executar_ex_9();
             printf("\n\n> Seu código foi executado com sucesso.");
             break;
+            
         default:
             break;
     }
