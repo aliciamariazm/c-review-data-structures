@@ -294,4 +294,32 @@ void executar_ex_12(){
     else{
         printf("\n| SÃO IGUAIS.");
     }
-}  
+}
+
+void executar_ex_13(){
+    float numero_real_1, numero_real_2, numero_real_3;
+
+    printf("-> Insira o 1º número real: ");
+    scanf("%f", &numero_real_1);
+    printf("\n-> Insira o 2º número real: ");
+    scanf("%f", &numero_real_2);
+    printf("\n-> Insira o 3º número real: ");
+    scanf("%f", &numero_real_3);
+
+    if(numero_real_1 > numero_real_2){
+        if(numero_real_1 > numero_real_3){
+            printf("\n| MAIOR VALOR: %.2f", numero_real_1);
+        }
+        else{
+            printf("\n| MAIOR VALOR: %.2f", numero_real_3);
+        }
+    }
+    else{
+        if(numero_real_2 > numero_real_3){
+            printf("\n| MAIOR VALOR: %.2f", numero_real_2);
+        }
+        else{
+            printf("\n| MAIOR VALOR: %.2f", numero_real_3);
+        }
+    }
+}
