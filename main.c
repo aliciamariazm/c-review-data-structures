@@ -94,6 +94,13 @@ int main(){
             executar_ex_11();
             printf("\n\n> Seu código foi executado com sucesso.");
             break;
+
+        case 12:
+            system("cls");
+            printf("============= EX 12 | PRIMEIRA LISTA ==============\n");
+            executar_ex_12();
+            printf("\n\n> Seu código foi executado com sucesso.");
+            break;
             
         default:
             break;

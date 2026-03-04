@@ -276,3 +276,22 @@ void executar_ex_11(){
 
     printf("\n| A área do círculo é: %.2f", resultado_da_area);
 }
+
+void executar_ex_12(){
+    float numero_real_1, numero_real_2;
+
+    printf("-> Insira o 1º número real: ");
+    scanf("%f", &numero_real_1);
+    printf("\n-> Insira o 2º número real: ");
+    scanf("%f", &numero_real_2);
+
+    if(numero_real_1 > numero_real_2){
+        printf("\n| MAIOR VALOR: %.2f", numero_real_1);
+    }
+    else if(numero_real_1 != numero_real_2){
+        printf("\n| MAIOR VALOR: %.2f", numero_real_2);
+    }
+    else{
+        printf("\n| SÃO IGUAIS.");
+    }
+}  
