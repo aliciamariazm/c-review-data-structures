@@ -258,3 +258,21 @@ void executar_ex_10(){
     }
 
 }
+
+void executar_ex_11(){
+    float raio_do_circulo, resultado_da_area;
+    float const PI = 3.14;
+    
+    do{
+        printf("-> Insira o valor do raio do círculo: ");
+        scanf("%f", &raio_do_circulo);
+        if(raio_do_circulo < 0){
+            printf("\n| Erro ao calcular a área, pois o raio é negativo. ");
+            system("pause");
+        }
+    } while(raio_do_circulo < 0);
+
+    resultado_da_area = PI*raio_do_circulo*raio_do_circulo;
+
+    printf("\n| A área do círculo é: %.2f", resultado_da_area);
+}
