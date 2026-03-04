@@ -20,7 +20,7 @@ void executar_lista_3(){
             
             case 0:
                 break;
-                
+
             default:
                 printf("Opção inválida. ");
                 system("pause");
@@ -32,6 +32,17 @@ void executar_lista_3(){
     
 }
 
+// REFATORAR! - feito
 void executar_ex_1_L3(){
+    int sequencia_de_numeros[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, aux[10]; 
+
+    for(int i = 0, j = 9; i < 10; i++, j--){
+        aux[i] = sequencia_de_numeros[j];
+    }
+
+    printf("| RESULTADO: ");
+    for(int i = 0; i < 10; i++){
+        printf("%d ", aux[i]);
+    }
 
 }
