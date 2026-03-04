@@ -25,7 +25,16 @@ void executar_lista_3(){
                 printf("\n> Seu código foi executado com sucesso. ");
                 system("pause");
                 break;
-            
+
+            case 3:
+                system("cls");
+                printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+                executar_ex_3_L3();
+                printf("\n> Seu código foi executado com sucesso. ");
+                system("pause");
+                system("cls");
+                break;
+
             case 0:
                 break;
 
@@ -79,5 +88,28 @@ void executar_ex_2_L3(){
         for(int j = 0; j < 2; j++){
             printf("%d ", matriz[i][j]);
         }
+    }
+}
+
+void executar_ex_3_L3(){
+    int matriculas[10], aux, booleano = 0;
+
+    for(int i = 0; i < 10; i++){
+        do{
+            booleano = 0;
+            printf("\n-> Insira o %dº número de matrícula: ", i+1);
+            scanf("%d", &aux);
+            for(int j = 0; j < i; j++){
+                if(aux == matriculas[j]){
+                    booleano++;
+                    printf("\nA matrícula já está cadastrada. ");
+                    system("pause");
+                    break;
+                }                
+            }
+
+        } while(booleano > 0);
+        
+        matriculas[i] = aux;
     }
 }
