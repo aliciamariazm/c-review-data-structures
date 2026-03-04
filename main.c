@@ -3,6 +3,7 @@
 #include <locale.h>
 #include "declaracao_de_funcoes_lista_1.h"
 #include "declaracao_de_funcoes_lista_3.h"
+#include "declaracao_de_funcoes_lista_6.h"
 
 int main(){
     setlocale(LC_ALL, "Portuguese");
@@ -22,6 +23,11 @@ int main(){
             case 3:
                 system("cls");
                 executar_lista_3();
+                break;
+            
+            case 6:
+                system("cls");
+                executar_lista_6();
                 break;
 
             default:
