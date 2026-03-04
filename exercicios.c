@@ -241,3 +241,20 @@ void executar_ex_9(){
 
     printf("\n| RESULTADO DA DIVISÃO: %.2f", resultado_da_divisao);
 }
+
+void executar_ex_10(){
+    float numero_real_1, numero_real_2;
+
+    printf("-> Insira o 1º número real: ");
+    scanf("%f", &numero_real_1);
+    printf("\n-> Insira o 2º número real: ");
+    scanf("%f", &numero_real_2);
+
+    if((numero_real_1 > 0) && (numero_real_2 > 0)){
+        printf("\n| Valores   são   validos.");
+    }
+    else {
+        printf("\n| Valores invalidos.");
+    }
+
+}
