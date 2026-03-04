@@ -1,5 +1,5 @@
-#ifndef FUNCOES_DOS_EXERCICIOS_H
-#define FUNCOES_DOS_EXERCICIOS_H
+#ifndef FUNCOES_DA_LISTA_1_H
+#define FUNCOES_DA_LISTA_1_H
 
 typedef struct{
     char nome[50];
@@ -9,6 +9,7 @@ typedef struct{
     float peso;
 } Usuario;
 
+void executar_lista_1();
 void executar_ex_1(Usuario *usuario_atual);
 void executar_ex_2(Usuario *usuario_atual);
 void executar_ex_3();

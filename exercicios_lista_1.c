@@ -1,6 +1,132 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "declaracao_de_funcoes.h"
+#include "declaracao_de_funcoes_lista_1.h"
+
+// FUNÇÕES PARA MENU
+void executar_lista_1(){
+    int escolha_do_exercicio;
+    Usuario usuario_atual;
+    do{
+        printf("============= PRIMEIRA LISTA | ESTRUTURA DE DADOS ==============\n");
+        printf("--> Escolha o ID do exercício\n> ");
+        scanf("%d", &escolha_do_exercicio);
+        if(escolha_do_exercicio < 1 || escolha_do_exercicio > 42){
+            printf("Opção inválida.\n");
+            system("pause");
+            system("cls");
+        }
+    } while(escolha_do_exercicio < 1 || escolha_do_exercicio > 42);
+    
+    switch(escolha_do_exercicio){
+        case 1:
+            system("cls");
+            printf("============= EX 1 | PRIMEIRA LISTA ==============\n");
+            executar_ex_1(&usuario_atual);
+            printf("\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+
+        case 2:
+            system("cls");
+            printf("============= EX 2 | PRIMEIRA LISTA ==============\n");
+            executar_ex_2(&usuario_atual);
+            printf("\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        
+        case 3:
+            system("cls");
+            printf("============= EX 3 | PRIMEIRA LISTA ==============\n");
+            executar_ex_3();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+
+        case 4:
+            system("cls");
+            printf("============= EX 4 | PRIMEIRA LISTA ==============\n");
+            executar_ex_4(&usuario_atual);
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+
+        case 5:
+            system("cls");
+            printf("============= EX 5 | PRIMEIRA LISTA ==============\n");
+            executar_ex_5(&usuario_atual);
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        
+        case 6:
+            system("cls");
+            printf("============= EX 6 | PRIMEIRA LISTA ==============\n");
+            executar_ex_6();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        case 7:
+            system("cls");
+            printf("============= EX 7 | PRIMEIRA LISTA ==============\n");
+            executar_ex_7();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        case 8:
+            system("cls");
+            printf("============= EX 8 | PRIMEIRA LISTA ==============\n");
+            executar_ex_8();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        
+        case 9:
+            system("cls");
+            printf("============= EX 9 | PRIMEIRA LISTA ==============\n");
+            executar_ex_9();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        
+        case 10:
+            system("cls");
+            printf("============= EX 10 | PRIMEIRA LISTA ==============\n");
+            executar_ex_10();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        
+        case 11:
+            system("cls");
+            printf("============= EX 11 | PRIMEIRA LISTA ==============\n");
+            executar_ex_11();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+
+        case 12:
+            system("cls");
+            printf("============= EX 12 | PRIMEIRA LISTA ==============\n");
+            executar_ex_12();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+        
+        case 13:
+            system("cls");
+            printf("============= EX 13 | PRIMEIRA LISTA ==============\n");
+            executar_ex_13();
+            printf("\n\n> Seu código foi executado com sucesso. ");
+            system("pause");
+            break;
+            
+        default:
+            break;
+    }
+}
+
+// -----------------------------------------------------------------------------------------------------------------------
+// EXERCÍCIOS DA LISTA 1
 
 void executar_ex_1(Usuario *usuario_atual){
     printf("-> Insira a sua cidade natal: ");
