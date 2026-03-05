@@ -34,6 +34,60 @@ void executar_lista_3(){
                 system("pause");
                 system("cls");
                 break;
+            
+            case 4:
+                system("cls");
+                printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+                executar_ex_4_L3();
+                printf("\n> Seu código foi executado com sucesso. ");
+                system("pause");
+                system("cls");
+                break;
+
+            // case 5:
+            //     system("cls");
+            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+            //     executar_ex_5_L3();
+            //     printf("\n> Seu código foi executado com sucesso. ");
+            //     system("pause");
+            //     system("cls");
+            //     break;
+
+            // case 6:
+            //     system("cls");
+            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+            //     executar_ex_6_L3();
+            //     printf("\n> Seu código foi executado com sucesso. ");
+            //     system("pause");
+            //     system("cls");
+            //     break;
+
+            // case 7:
+            //     system("cls");
+            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+            //     executar_ex_7_L3();
+            //     printf("\n> Seu código foi executado com sucesso. ");
+            //     system("pause");
+            //     system("cls");
+            //     break;
+
+            // case 8:
+            //     system("cls");
+            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+            //     executar_ex_8_L3();
+            //     printf("\n> Seu código foi executado com sucesso. ");
+            //     system("pause");
+            //     system("cls");
+            //     break;
+
+            // case 9:
+            //     system("cls");
+            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+            //     executar_ex_9_L3();
+            //     printf("\n> Seu código foi executado com sucesso. ");
+            //     system("pause");
+            //     system("cls");
+            //     break;
 
             case 0:
                 break;
@@ -111,5 +165,27 @@ void executar_ex_3_L3(){
         } while(booleano > 0);
         
         matriculas[i] = aux;
+    }
+}
+
+void executar_ex_4_L3(){
+    int vetor_de_inteiros[100], aux[100], i = 0;
+
+    do{
+        printf("\n-> Insira um número inteiro: ");
+        scanf("%d", &vetor_de_inteiros[i]);
+
+        if(vetor_de_inteiros[i] == 999) break;
+        
+        i++;
+    } while(i < 100);
+
+    for(int j = 0, k = i-1; j < i; j++, k--){
+        aux[j] = vetor_de_inteiros[k];
+    }
+
+    printf("| RESULTADO: ");
+    for(int j = 0; j < 10; j++){
+        printf("%d ", aux[j]);
     }
 }
