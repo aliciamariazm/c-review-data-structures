@@ -53,14 +53,14 @@ void executar_lista_3(){
                 system("cls");
                 break;
 
-            // case 6:
-            //     system("cls");
-            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
-            //     executar_ex_6_L3();
-            //     printf("\n> Seu código foi executado com sucesso. ");
-            //     system("pause");
-            //     system("cls");
-            //     break;
+            case 6:
+                system("cls");
+                printf("============= EX 6 | EXERCICIOS VETORES ==============\n");
+                executar_ex_6_L3();
+                printf("\n> Seu código foi executado com sucesso. ");
+                system("pause");
+                system("cls");
+                break;
 
             // case 7:
             //     system("cls");
@@ -193,22 +193,23 @@ void executar_ex_4_L3(){
 void executar_ex_5_L3(){
     int matriz[3][3], aux[3];
 
-    for(int i = 0; i < 3; i++){
+    for(int i = 0, k = 2; i < 3; i++){
         for(int j = 0; j < 3; j++){
             printf("\n-> Insira o número [%d][%d]: ", i, j);
             scanf("%d", &matriz[i][j]);
-        }
-    }
-
-    printf("\n| MATRIZ ORIGINAL");
-    for(int i = 0, k = 2; i < 3; i++){
-        printf("\n| ");
-        for(int j = 0; j < 3; j++){
-            printf("%d ", matriz[i][j]);
             if(i == j){ 
                 aux[k] = matriz[i][j];
                 k--;
             }
+        }
+    }
+
+    printf("\n| MATRIZ ORIGINAL");
+    for(int i = 0; i < 3; i++){
+        printf("\n| ");
+        for(int j = 0; j < 3; j++){
+            printf("%d ", matriz[i][j]);
+            
         }
     }
 
@@ -224,4 +225,24 @@ void executar_ex_5_L3(){
             printf("%d ", matriz[i][j]);
         }
     }
+}
+
+void executar_ex_6_L3(){
+    float notas_do_aluno[3];
+
+    printf("-> Insira a 1ª nota do aluno: ");
+    scanf("%f", &notas_do_aluno[0]);
+    printf("\n-> Insira a 2ª nota do aluno: ");
+    scanf("%f", &notas_do_aluno[1]);
+    
+    notas_do_aluno[2] = (notas_do_aluno[0] + notas_do_aluno[1]) / 2;
+    printf("%f", notas_do_aluno[2]);
+
+    if(notas_do_aluno[2] >= 6){
+        printf("\n| APROVADO. ");
+    }
+    else{
+        printf("\n| REPROVADO. ");
+    }
+
 }
