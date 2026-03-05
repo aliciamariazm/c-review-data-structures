@@ -3,6 +3,7 @@
 #include <locale.h>
 #include "declaracao_de_funcoes_lista_1.h"
 #include "declaracao_de_funcoes_lista_3.h"
+#include "declaracao_de_funcoes_lista_5.h"
 #include "declaracao_de_funcoes_lista_6.h"
 
 int main(){
@@ -23,6 +24,11 @@ int main(){
             case 3:
                 system("cls");
                 executar_lista_3();
+                break;
+            
+            case 5:
+                system("cls");
+                executar_lista_5();
                 break;
             
             case 6:
