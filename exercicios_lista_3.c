@@ -62,18 +62,18 @@ void executar_lista_3(){
                 system("cls");
                 break;
 
-            // case 7:
-            //     system("cls");
-            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
-            //     executar_ex_7_L3();
-            //     printf("\n> Seu código foi executado com sucesso. ");
-            //     system("pause");
-            //     system("cls");
-            //     break;
+            case 7:
+                system("cls");
+                printf("============= EX 7 | EXERCICIOS VETORES ==============\n");
+                executar_ex_7_L3();
+                printf("\n> Seu código foi executado com sucesso. ");
+                system("pause");
+                system("cls");
+                break;
 
             // case 8:
             //     system("cls");
-            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+            //     printf("============= EX 8 | EXERCICIOS VETORES ==============\n");
             //     executar_ex_8_L3();
             //     printf("\n> Seu código foi executado com sucesso. ");
             //     system("pause");
@@ -82,7 +82,7 @@ void executar_lista_3(){
 
             // case 9:
             //     system("cls");
-            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+            //     printf("============= EX 9 | EXERCICIOS VETORES ==============\n");
             //     executar_ex_9_L3();
             //     printf("\n> Seu código foi executado com sucesso. ");
             //     system("pause");
@@ -228,8 +228,43 @@ void executar_ex_5_L3(){
 }
 
 void executar_ex_6_L3(){
-    float notas_do_aluno[3];
+    int matriculas[10], aux[3], booleano;
 
+    for(int i = 0; i < 10; i++){
+        printf("\n-> Cadastre o %dº número de matrícula: ", i+1);
+        scanf("%d", &matriculas[10]);
+    }
+    
+    system("cls");
+    
+    for(int i = 0; i < 3; i++){
+        booleano = 0;
+        printf("-> Insira a %d matrícula que deseja verificar: ", i+1);
+        scanf("%d", &aux[i]);
+        for(int j = 0; j < 10; j++){
+            if(aux[i] == matriculas[j]){
+                booleano++;
+                break;                
+            }            
+        }
+        
+        printf("%d", booleano);
+        if(booleano != 0){
+            printf("\n| A matrícula já está cadastrada. ");
+            system("pause");
+        }
+        else{
+            printf("\n| Não existe esta matrícula no sistema. ");
+            system("pause");
+        }
+
+    }
+
+}
+
+void executar_ex_7_L3(){
+    float notas_do_aluno[3];
+    
     printf("-> Insira a 1ª nota do aluno: ");
     scanf("%f", &notas_do_aluno[0]);
     printf("\n-> Insira a 2ª nota do aluno: ");
@@ -237,12 +272,11 @@ void executar_ex_6_L3(){
     
     notas_do_aluno[2] = (notas_do_aluno[0] + notas_do_aluno[1]) / 2;
     printf("%f", notas_do_aluno[2]);
-
+    
     if(notas_do_aluno[2] >= 6){
         printf("\n| APROVADO. ");
     }
     else{
         printf("\n| REPROVADO. ");
-    }
-
+    }   
 }
