@@ -37,21 +37,21 @@ void executar_lista_3(){
             
             case 4:
                 system("cls");
-                printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
+                printf("============= EX 4 | EXERCICIOS VETORES ==============\n");
                 executar_ex_4_L3();
                 printf("\n> Seu código foi executado com sucesso. ");
                 system("pause");
                 system("cls");
                 break;
 
-            // case 5:
-            //     system("cls");
-            //     printf("============= EX 3 | EXERCICIOS VETORES ==============\n");
-            //     executar_ex_5_L3();
-            //     printf("\n> Seu código foi executado com sucesso. ");
-            //     system("pause");
-            //     system("cls");
-            //     break;
+            case 5:
+                system("cls");
+                printf("============= EX 5 | EXERCICIOS VETORES ==============\n");
+                executar_ex_5_L3();
+                printf("\n> Seu código foi executado com sucesso. ");
+                system("pause");
+                system("cls");
+                break;
 
             // case 6:
             //     system("cls");
@@ -187,5 +187,41 @@ void executar_ex_4_L3(){
     printf("| RESULTADO: ");
     for(int j = 0; j < 10; j++){
         printf("%d ", aux[j]);
+    }
+}
+
+void executar_ex_5_L3(){
+    int matriz[3][3], aux[3];
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            printf("\n-> Insira o número [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    printf("\n| MATRIZ ORIGINAL");
+    for(int i = 0, k = 2; i < 3; i++){
+        printf("\n| ");
+        for(int j = 0; j < 3; j++){
+            printf("%d ", matriz[i][j]);
+            if(i == j){ 
+                aux[k] = matriz[i][j];
+                k--;
+            }
+        }
+    }
+
+    printf("\n\n| MATRIZ COM DIAGONAL PRINCIPAL INVERTIDA");
+    for(int i = 0, k = 0; i < 3; i++){
+        printf("\n| ");
+        for(int j = 0; j < 3; j++){
+            if(i == j){
+                matriz[i][j] = aux[k];
+                k++;
+            }
+
+            printf("%d ", matriz[i][j]);
+        }
     }
 }
